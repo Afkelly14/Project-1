@@ -115,7 +115,7 @@ button {
     padding: 0px 30px;
 }
 
-#Grid-Image-Container {
+#grid {
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-columns: auto auto auto;
@@ -124,17 +124,17 @@ button {
     margin: 80px;
 }
 
-.Cabin-Pic {
+.Cabin {
     background-image: url(cold-daylight-fjord-1586298.png);
-    height: 250px;
+    height: 350px;
     display: flex;
     background-size: cover;
     align-content: center;
 }
 
-.Wolf-Pic {
+.Wolf {
     background-image: url(adorable-animal-breed-434090.png);
-    height: 250px;
+    height: 350px;
     background-size: cover;
     display: flex;
     align-content: center;
@@ -227,5 +227,14 @@ button {
 
 .PhoneNumber {
     font-weight: lighter;
+}
+
+@media only screen and (max-device-width: 480px) {
+
+    #grid {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
