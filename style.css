@@ -117,8 +117,8 @@ button {
 
 #grid {
     display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-columns: 1fr, 1fr, 1fr;
     grid-gap: .3em;
     line-height: 150px;
     margin: 80px;
@@ -129,7 +129,8 @@ button {
     height: 350px;
     display: flex;
     background-size: cover;
-    align-content: center;
+    justify-content: center;
+    background-position: center;
 }
 
 .Wolf {
@@ -137,8 +138,9 @@ button {
     height: 350px;
     background-size: cover;
     display: flex;
-    align-content: center;
+    justify-content: center;
     grid-column: 2/span 3;
+    background-position: center;
 }
 
 .Image-Overlay {
@@ -148,28 +150,31 @@ button {
 
 .Skier {
     background-image: url(action-active-cold-2433353.png);
-    height: 500px;
+    height: 900px;
     display: flex;
     background-size: cover;
-    align-content: center;
+    justify-content: center;
     grid-row: 2/span 3;
     grid-column: 1/span 3;
+    background-position: center;
 }
 
 .Hiker {
     background-image: url(adventure-adventurer-altitude-2577274.png);
-    height: 250px;
+    height: 450px;
     display: flex;
     background-size: cover;
-    align-content: center;
+    justify-content: center;
+    background-position: center;
 }
 
 .Cross {
     background-image: url(beatiful-landscape-cold-colors-2832052.png);
-    height: 245px;
+    height: 450px;
     display: flex;
     background-size: cover;
-    align-content: center;
+    justify-content: center;
+    background-position: center;
 }
 
 .Testimonial {
@@ -177,7 +182,7 @@ button {
     height: 90px;
     width: 85px;
     background-size: cover;
-    align-content: center;
+    justify-content: center;
     margin: 0 45%;
 }
 
@@ -187,13 +192,16 @@ button {
     grid-template-columns: auto auto auto;
     max-height: 45px;
     padding-top: 50px;
-}
-
-.footer {
     background-color: #3693D6;
     height: 150px;
     color: white;
 }
+
+/*.footer {
+    background-color: #3693D6;
+    height: 150px;
+    color: white;
+} */
 
 .Location {
     font-weight: bold;
@@ -235,6 +243,8 @@ button {
         display: flex;
         flex-direction: column;
     }
+
+    .footer
 
 }
 
