@@ -211,7 +211,6 @@ button {
     
 }
 .Address {
-    font-weight: ;
     grid-row: 2;
     grid-column: 1;
 }
@@ -238,14 +237,22 @@ button {
     font-weight: lighter;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media screen and (max-width: 700px) {
 
     #grid {
         display: flex;
         flex-direction: column;
     }
 
-    .footer
+    .Testimony-Paragraph {
+        margin: 0px 70px;
+        font-size: 30px;
+    }
+
+    .white-text {
+        font-size: 25px;
+        padding: 0px 50px 25px;
+    }
+    
 
 }
-
